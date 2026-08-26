@@ -1,0 +1,12 @@
+# OS / editor noise
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
+
+# Secrets — never commit
+.env
+.env.*
+*.pem
+*.key

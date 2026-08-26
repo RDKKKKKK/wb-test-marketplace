@@ -1,0 +1,35 @@
+{
+  "name": "shuoqi-wb-test-marketplace",
+  "description": "Shuoqi's personal test marketplace for WorkBuddy. Hosts a handful of demo skills to validate the custom-marketplace end-to-end flow (add marketplace -> list plugins -> install -> invoke skill).",
+  "owner": {
+    "name": "Shuoqi",
+    "email": "shuoqi@example.com"
+  },
+  "metadata": {
+    "version": "0.1.0",
+    "phase": "test-fixtures"
+  },
+  "plugins": [
+    {
+      "name": "hello-world-skill",
+      "description": "Minimal SKILL.md demo — proves the marketplace install pipeline end-to-end with zero external dependencies.",
+      "source": "./plugins/hello-world-skill",
+      "version": "0.1.0",
+      "category": "skill"
+    },
+    {
+      "name": "pomodoro-timer-skill",
+      "description": "Pomodoro focus-timer skill with a runnable shell script — exercises the scripts/ bundle resource loading path.",
+      "source": "./plugins/pomodoro-timer-skill",
+      "version": "0.1.0",
+      "category": "skill"
+    },
+    {
+      "name": "json-formatter-skill",
+      "description": "Pretty-print / validate JSON skill with a reference schema — exercises the references/ bundle resource loading path.",
+      "source": "./plugins/json-formatter-skill",
+      "version": "0.1.0",
+      "category": "skill"
+    }
+  ]
+}

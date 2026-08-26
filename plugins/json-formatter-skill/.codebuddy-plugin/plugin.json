@@ -1,0 +1,16 @@
+{
+  "name": "json-formatter-skill",
+  "version": "0.1.0",
+  "description": "Pretty-print / validate JSON skill with a reference schema — exercises the references/ bundle resource loading path.",
+  "author": {
+    "name": "Shuoqi"
+  },
+  "category": "skill",
+  "keywords": [
+    "json",
+    "formatter",
+    "validator",
+    "schema"
+  ],
+  "license": "MIT"
+}

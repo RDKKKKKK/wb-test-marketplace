@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/user.json",
+  "title": "User",
+  "description": "Sample schema loaded from references/example-schema.json to prove the references/ bundle resource is reachable after marketplace install.",
+  "type": "object",
+  "required": ["id", "email"],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "displayName": {
+      "type": "string",
+      "maxLength": 64
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["admin", "editor", "viewer"]
+      }
+    }
+  },
+  "additionalProperties": false
+}

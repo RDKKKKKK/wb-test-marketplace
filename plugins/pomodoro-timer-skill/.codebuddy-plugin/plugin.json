@@ -1,0 +1,16 @@
+{
+  "name": "pomodoro-timer-skill",
+  "version": "0.1.0",
+  "description": "Pomodoro focus-timer skill with a runnable shell script — exercises the scripts/ bundle resource loading path.",
+  "author": {
+    "name": "Shuoqi"
+  },
+  "category": "skill",
+  "keywords": [
+    "pomodoro",
+    "timer",
+    "focus",
+    "productivity"
+  ],
+  "license": "MIT"
+}
