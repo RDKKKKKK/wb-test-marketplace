@@ -1,7 +1,7 @@
 {
   "name": "hello-world-skill",
-  "version": "0.1.0",
-  "description": "Minimal SKILL.md demo — proves the marketplace install pipeline end-to-end with zero external dependencies.",
+  "version": "0.2.0",
+  "description": "Minimal SKILL.md demo — proves the marketplace install + version-update pipeline end-to-end with zero external dependencies.",
   "author": {
     "name": "Shuoqi"
   },

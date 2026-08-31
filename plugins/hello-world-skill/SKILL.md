@@ -42,7 +42,14 @@ The skill is intentionally trivial — it does **not** call any external API, wr
 ## Expected output
 
 ```
-[hello-world v0.1.0] Skill loaded successfully from custom marketplace.
+[hello-world v0.2.0] Skill loaded successfully from custom marketplace.
 Marketplace: shuoqi-wb-test-marketplace
-Active plugin version: 0.1.0
+Active plugin version: 0.2.0
 ```
+
+## Changelog
+
+- **v0.2.0** — Added version-update verification: the greeting now echoes the
+  plugin version so a marketplace-triggered update is immediately visible in
+  the output (0.1.0 → 0.2.0 confirms the update pipeline works).
+- **v0.1.0** — Initial release.

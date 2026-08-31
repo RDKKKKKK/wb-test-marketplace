@@ -1,8 +1,30 @@
 #!/usr/bin/env bash
 # pomodoro.sh — minimal POSIX-shell Pomodoro timer
 # Usage: pomodoro.sh [WORK_MIN=25] [BREAK_MIN=5] [CYCLES=4]
+# Run with -h or --help to print usage.
 
 set -u
+
+VERSION="0.1.1"
+
+usage() {
+  cat <<EOF
+pomodoro.sh v${VERSION} — minimal POSIX-shell Pomodoro timer
+
+Usage: pomodoro.sh [WORK_MIN] [BREAK_MIN] [CYCLES]
+
+  WORK_MIN    focus phase length in minutes  (default 25)
+  BREAK_MIN   break phase length in minutes  (default 5)
+  CYCLES      number of work/break cycles    (default 4)
+
+Example: pomodoro.sh 25 5 4
+EOF
+}
+
+if [[ "${1:-}" == "-h" || "${1:-}" == "--help" ]]; then
+  usage
+  exit 0
+fi
 
 WORK_MIN="${1:-25}"
 BREAK_MIN="${2:-5}"

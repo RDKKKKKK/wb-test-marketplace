@@ -34,7 +34,13 @@ Trigger phrases include:
 
 2. **Schema-validate**: load the bundled `references/example-schema.json` into context, then guide the user through mapping the user payload against it.
 
-3. **Surface errors**: catch `json.decoder.JSONDecodeError` and report the line/column.
+3. **Sort keys** (new in v0.2.0): normalize key order for diffing.
+
+   ```bash
+   echo '{"b":2,"a":1}' | python3 -c "import json,sys; print(json.dumps(json.load(sys.stdin), indent=2, sort_keys=True))"
+   ```
+
+4. **Surface errors**: catch `json.decoder.JSONDecodeError` and report the line/column.
 
 ## Bundled resources
 
@@ -44,3 +50,8 @@ Trigger phrases include:
 
 - Pure stdlib — no `npm install`, no `pip install` required.
 - The skill does **not** mutate files in place. Always pipe through `python3 -m json.tool`.
+
+## Changelog
+
+- **v0.2.0** — Added sort-keys normalization mode for diff-friendly output.
+- **v0.1.0** — Initial release: pretty-print + schema-validate.
